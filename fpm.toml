@@ -1,0 +1,24 @@
+name = "registry"
+version = "0.1.0"
+license = "GPL"
+author = "rodrigues, L.F"
+maintainer = "luiz.rodrigues@inpe.br"
+copyright = "Copyright (c) 2013,  Los Alamos National Security"
+
+[build]
+auto-executables = true
+auto-tests = true
+auto-examples = true
+module-naming = false
+
+[install]
+library = false
+
+[fortran]
+implicit-typing = true
+implicit-external = true
+source-form = "free"
+
+[dependencies]
+ezxml = { git = "https://github.com/monanadmin/EZXML"}
+
